@@ -1,0 +1,508 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: #f4f9f4;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+/* fonts */
+@font-face {
+  font-family: baloo bhai;
+  src: url(fonts/BalooBhai-Regular.ttf);
+}
+@font-face {
+  font-family: lato;
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrate;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Basic style colors and font sizes */
+:root {
+  --basecolor1: #e2ede8;
+  --basecolor2: #c7d9d5;
+  --PrimaryColor: #6c9894;
+  --paraColor1: #90b2ae;
+  --textColor1: #dce5e3;
+  --secondaryColor: #f4f9f4;
+  /* font sizes */
+  --primarySize: 3.4rem;
+  --secondarySize: 2.2rem;
+  --paraSize1: 1rem;
+}
+
+p {
+  font-family: montserrate;
+  font-weight: 500;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: baloo bhai;
+}
+
+/* Creating container */
+.container {
+  width: 100%;
+  /* padding: 0 50px; */
+  margin: auto;
+}
+
+/* Styling header section */
+.main-nav {
+  padding-left: 40px;
+}
+header nav {
+  flex: 1;
+  margin: 20px 0;
+  background-color: var(--basecolor1);
+  padding-right: 20px;
+  align-items: center;
+  position: relative;
+}
+.nav-bar {
+  list-style: none;
+  padding-right: 20px;
+  padding: 10px 20px 10px 0;
+}
+.nav-bar li {
+  margin-right: 3rem;
+  display: inline-block;
+}
+.nav-bar li a {
+  text-decoration: none;
+  font-family: baloo bhai;
+  font-size: 1rem;
+  padding: 10px 28px;
+  color: #494f4e;
+  transition: all 0.3s;
+}
+li a:hover {
+  background-color: var(--basecolor2);
+  color: #51605e;
+}
+
+/* burger menu */
+.burger {
+  color: var(--basecolor3);
+  cursor: pointer;
+  display: none;
+}
+
+/* Styling home section */
+.home {
+  padding: 60px 0;
+}
+.home .img img {
+  border-radius: 50%;
+  max-width: 95%;
+}
+.column {
+  min-width: 300px;
+  text-align: center;
+  flex-basis: 50%;
+  margin: 1rem 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: baloo bhai;
+}
+.home h1 {
+  font-size: 3.4rem;
+  color: var(--PrimaryColor);
+  letter-spacing: 2px;
+}
+.home p {
+  color: var(--paraColor1);
+  font-size: var(--paraSize1);
+  line-height: 1.1;
+}
+.home-btn {
+  padding: 0.2rem 1.5rem;
+  background-color: var(--PrimaryColor);
+  color: var(--textColor1);
+  border-radius: 0.5rem;
+  margin-top: 18px;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+}
+.home-btn:hover {
+  background-color: #51605e;
+}
+
+/* Class section designing */
+.class-section {
+  background-color: var(--PrimaryColor);
+  padding: 4rem 0;
+}
+.class-section .heading {
+  text-align: center;
+}
+.class-section .heading h2 {
+  font-size: 3rem;
+  color: var(--secondaryColor);
+  margin-bottom: 1.5rem;
+}
+.class-section .heading p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  color: var(--secondaryColor);
+}
+.class-section .row .column-3 {
+  flex-basis: 30%;
+  text-align: center;
+}
+.class-section .row .column-3 img {
+  max-width: 100%;
+}
+.class-section .row .column-3 h4 {
+  color: var(--secondaryColor);
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.class-section .row .column-3 p {
+  color: var(--secondaryColor);
+  font-size: 1rem;
+}
+
+/* Styling stats section */
+.stats {
+  background-image: url(images/stats-bg.jpg);
+  padding: 3rem 0 4rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stats .heading {
+  text-align: center;
+}
+.stats .heading h2 {
+  font-size: 3rem;
+  color: var(--basecolor3);
+  margin-bottom: 1.5rem;
+}
+.stats .heading p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  color: var(--PrimaryColor);
+}
+.stats .row .column-3 {
+  flex-basis: 30%;
+  text-align: center;
+  height: 300px;
+  margin-top: 5rem;
+  border: 2px solid var(--PrimaryColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#column-1 h4,
+#column-1 p {
+  font-family: montserrate;
+}
+#column-1 h4 {
+  font-weight: 400;
+}
+#column-1 p {
+  font-size: 1.5rem;
+}
+.stats .row .column-3 h4 {
+  font-size: 3rem;
+}
+.stats .row .column-3 p {
+  font-size: 1.5rem;
+}
+
+/* Styling instructor section */
+.instructor {
+  background-color: var(--PrimaryColor);
+}
+.instructor .column-1 {
+  height: 690px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.instructor .column-1 h1 {
+  color: var(--secondaryColor);
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.instructor .column-1 p {
+  color: var(--secondaryColor);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.btn-primary {
+  padding: 0.6rem 3rem;
+  align-self: start;
+  margin: 3rem 0;
+  font-size: 1rem;
+  color: var(--basecolor3);
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+.btn-primary:hover {
+  border: 1px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  background-color: var(--PrimaryColor);
+}
+
+/* Styling experience section */
+.experience {
+  padding: 3rem 0;
+}
+.experience .row .column-2 img {
+  max-width: 100%;
+}
+.experience .row {
+  width: 100%;
+}
+.exp-col {
+  margin-left: 3rem;
+  padding: 3rem 0;
+}
+.row .column-2 {
+  /* max-width: 370px; */
+  flex-basis: 50%;
+}
+.exp-col h1 {
+  font-size: 3rem;
+  color: var(--PrimaryColor);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.exp-col p {
+  color: var(--PrimaryColor);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.btn-secondary {
+  padding: 0.6rem 3rem;
+  align-self: start;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--secondaryColor);
+  background-color: var(--PrimaryColor);
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+.btn-secondary:hover {
+  color: var(--PrimaryColor);
+  background-color: transparent;
+  border: 1px solid var(--PrimaryColor);
+}
+
+/* Styling pricing section */
+.pricing {
+  padding: 3rem 0;
+  background-color: var(--PrimaryColor);
+}
+.pricing .heading {
+  display: block;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.pricing .heading h1 {
+  font-size: 3rem;
+  color: var(--secondaryColor);
+}
+.pricing .heading p {
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+  margin-bottom: 3.5rem;
+}
+.pricing .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+.pricing .column-3 {
+  background-color: var(--secondaryColor);
+  flex-basis: 30%;
+  border-radius: 8px;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  max-width: 300px;
+}
+.pricing .column-3 .head h3 {
+  color: var(--PrimaryColor);
+  font-size: 1.6rem;
+}
+.pricing .column-3 .head h4 {
+  color: var(--PrimaryColor);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.pricing .column-3 .para p {
+  color: var(--PrimaryColor);
+  font-weight: 300;
+}
+.pricing .column-3 .icon img {
+  width: 90px;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.pricing .btn .btn-secondary {
+  margin-bottom: 0;
+}
+
+/* Styling trainer section */
+.trainer {
+  padding: 2rem 0 3rem 0;
+  background-image: url(images/trainer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.trainer .img {
+  max-width: 320px;
+  margin: 2rem auto;
+}
+.trainer img {
+  max-width: 100%;
+}
+.trainer .para {
+  max-width: 520px;
+  margin: 1rem auto;
+}
+.trainer .para p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--PrimaryColor);
+}
+.trainer h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--PrimaryColor);
+}
+
+/* Styling newsletter section */
+
+.newsletter {
+  background-color: var(--PrimaryColor);
+  color: var(--PrimaryColor);
+  padding-bottom: 4rem;
+}
+.wrapper {
+  text-align: center;
+  width: 80%;
+  background-color: var(--secondaryColor);
+  margin: 0 auto;
+  padding: 2rem 0 4rem 0;
+}
+.wrapper h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.wrapper p {
+  font-size: 1rem;
+  margin: 0 auto 1rem auto;
+  max-width: 500px;
+  font-weight: 300;
+}
+form {
+  max-width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+}
+form input {
+  width: 60%;
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid var(--PrimaryColor);
+  border-radius: 32px;
+  position: relative;
+  left: 45px;
+  color: var(--PrimaryColor);
+  font-size: 1rem;
+}
+form input::placeholder {
+  color: var(--PrimaryColor);
+}
+form button {
+  padding: 0.8rem;
+  background-color: transparent;
+  color: var(--PrimaryColor);
+  position: relative;
+  right: 51px;
+  font-size: 1rem;
+}
+
+/* Styling footer */
+.footer {
+  padding: 4rem 0;
+  background-color: var(--secondaryColor);
+}
+.footer .column-4 {
+  flex-basis: 23%;
+}
+.footer .column-4 h6 {
+  font-size: 2.5rem;
+  font-family: baloo bhai;
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+.footer .column-4 p {
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--PrimaryColor);
+  font-family: montserrate;
+}
+
+/* Copyright  */
+.copyright {
+  background-color: var(--PrimaryColor);
+  color: white;
+  padding: 0.8rem 0;
+}
+.copyright p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}

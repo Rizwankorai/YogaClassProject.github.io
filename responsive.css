@@ -1,0 +1,176 @@
+/* media queries for container class */
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .stats .row .column-3 {
+    padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Media queries for rest of website */
+@media only screen and (max-width: 992px) {
+  .stats .row {
+    flex-direction: column;
+  }
+  .instructor .column-2 {
+    width: 100%;
+    height: auto;
+  }
+  .instructor .column-2 img {
+    width: 100%;
+  }
+  .instructor .row {
+    flex-direction: column-reverse;
+  }
+  .class-section .row {
+    flex-direction: column;
+  }
+  .exp-col h1 {
+    font-size: 2.5rem;
+  }
+  .pricing .row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer .column-4 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home img {
+    max-width: 90% !important;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .burger {
+    display: block;
+  }
+  nav {
+    padding-right: 0;
+  }
+  .nav-bar {
+    position: absolute;
+    width: fit-content;
+    height: 100vh;
+    padding-right: 0;
+    top: 18px;
+    right: -100%;
+    background-color: #e2ede8;
+    transition: all 0.5s;
+  }
+  .nav-bar li {
+    display: block;
+    margin: 10vh 0;
+    text-align: center;
+  }
+  .nav-bar li a {
+    display: block;
+    width: 100%;
+  }
+  .nav-bar li:nth-child(1) {
+    margin-top: 10px;
+  }
+  .column-3 {
+    margin: 2rem 0;
+  }
+  .exp-col {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper h2 {
+    font-size: 2rem;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  form {
+    width: 100% !important;
+  }
+
+  form input {
+    left: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  form button {
+    left: 0;
+    padding: 0.9rem 3rem;
+    background-color: #6c9894;
+    color: white;
+    border-radius: 33px;
+    border: 1px solid transparent;
+  }
+  form button:hover {
+    color: #6c9894;
+    background-color: white;
+    border: 1px solid #6c9894;
+  }
+  .footer .column-4 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .class-section .row .column-3 img {
+    max-width: 70%;
+  }
+  .stats .row .column-3 {
+    padding: 4rem 2rem;
+  }
+  .instructor .column-1 p {
+    text-align: center;
+  }
+  .instructor .column-1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .btn-primary {
+    align-self: center;
+  }
+  .pricing .row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .trainer h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .instructor .column-1 h1 {
+    font-size: 2rem;
+  }
+  .btn-primary {
+    align-self: center;
+  }
+  h1,
+  h2 {
+    font-size: 2rem !important;
+  }
+}
